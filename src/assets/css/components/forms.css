@@ -1,0 +1,60 @@
+@import url('https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css');
+
+input#search {
+  caret-color: theme('colors.ocean');
+}
+
+@screen sm {
+  input#search {
+    caret-color: auto;
+  }
+}
+
+@responsive {
+  .placeholder-gray-500 {
+    &::placeholder {
+      @apply text-gray-500 opacity-100;
+    }
+
+    &:focus::placeholder {
+      @apply text-gray-600;
+    }
+  }
+
+  .placeholder-white {
+    &::placeholder {
+      @apply text-white opacity-100;
+    }
+  }
+
+}
+
+.algolia-autocomplete {
+  @apply w-full;
+
+  .ds-dropdown-menu {
+    @apply w-full min-w-full max-w-full left-0 shadow-lg-soft !important;
+    top: 70% !important;
+
+    &::before,
+    [class^=ds-dataset-] {
+      @apply border-gray-300 !important;
+    }
+
+    .algolia-docsearch-suggestion--highlight {
+      @apply shadow-none border-b-2 border-gradient-r-ocean-light !important;
+    }
+
+    .algolia-docsearch-suggestion--subcategory-column:after {
+      @apply pr-1;
+    }
+
+    .ds-suggestion {
+      @apply text-sm py-1;
+    }
+
+    .ds-suggestions a {
+      @apply no-underline;
+    }
+  }
+}

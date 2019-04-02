@@ -1,0 +1,88 @@
+- name: Getting Started
+  items:
+    - title: What is Maizzle?
+      path: /docs/introduction/
+    - title: Installation
+      path: /docs/installation/
+
+- name: Development
+  items:
+    - title: Build process
+      path: /docs/build-process/
+    - title: Commands
+      path: /docs/commands/
+    - title: Layouts
+      path: /docs/layouts/
+    - title: Templates
+      path: /docs/templates/
+    - title: Partials
+      path: /docs/partials/
+    - title: Components
+      path: /docs/components/
+    - title: Assets
+      path: /docs/assets/
+    - title: Tailwind CSS
+      path: /docs/tailwindcss/
+    - title: Server Side
+      path: /docs/server-side/
+
+- name: Configuration
+  items:
+    - title: Base Config
+      path: /docs/configuration/
+    - title: Environments
+      path: /docs/environments/
+    - title: Doctype
+      path: /docs/doctype/
+    - title: Language
+      path: /docs/language/
+    - title: Charset
+      path: /docs/charset/
+    - title: Title
+      path: /docs/title/
+    - title: Google Fonts
+      path: /docs/google-fonts/
+    - title: BrowserSync
+      path: /docs/browsersync/
+    - title: Build Paths
+      path: /docs/build-paths/
+    - title: Markdown
+      path: /docs/markdown/
+    - title: Tailwind CSS
+      path: /docs/tailwindcss-config/
+    - title: Functions
+      path: /docs/functions/
+
+- name: Transformers
+  items:
+    - title: CSS Inlining
+      path: /docs/css-inlining/
+    - title: Code Cleanup
+      path: /docs/code-cleanup/
+    - title: Extra Attributes
+      path: /docs/extra-attributes/
+    - title: Base Image URL
+      path: /docs/base-image-url/
+    - title: URL Parameters
+      path: /docs/url-parameters/
+    - title: Prettify
+      path: /docs/prettify/
+    - title: Minify
+      path: /docs/minify/
+
+- name: Examples
+  items:
+    - title: Spacers
+      path: /docs/spacers/
+    - title: Divider
+      path: /docs/divider/
+    - title: Buttons
+      path: /docs/buttons/
+    - title: Gradients
+      path: /docs/gradients/
+    - title: Web Fonts
+      path: /docs/web-fonts/
+    - title: Reverse Stack
+      path: /docs/reverse-stack/
+    - title: ⚡4email
+      path: /docs/amp4email/

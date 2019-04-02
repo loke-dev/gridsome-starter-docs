@@ -1,0 +1,47 @@
+.bg-gradient-maizzle {
+  background: url('/images/escheresque.png'), linear-gradient(-90deg, #5f54f1 0%, #4398ee 100%);
+}
+
+.transition-all {
+  transition: all 0.3s cubic-bezier(0.86, 0, 0.07, 1) 0s;
+}
+
+.transition-transform {
+  transition: transform 0.3s cubic-bezier(0.86, 0, 0.07, 1) 0s;
+}
+
+.cursor-help {
+  cursor: help;
+}
+
+.page-enter-active, .page-leave-active {
+  transition: opacity .5s;
+}
+.page-enter, .page-leave-to {
+  opacity: 0;
+}
+
+@responsive {
+  .top-16 {
+    top: 3.5rem;
+  }
+  .top-24 {
+    top: 6rem;
+  }
+
+  .bg-image-none {
+    background-image: none;
+  }
+}
+
+.feature-link {
+  @apply bg-white block p-4 border-l-2 border-gradient-b-ocean-light rounded-sm text-sm font-bold transition-shadow;
+
+  &:hover {
+    @apply shadow-lg-soft;
+  }
+}
+
+.feature-text {
+  @apply font-normal block mt-2 text-gray-600;
+}
