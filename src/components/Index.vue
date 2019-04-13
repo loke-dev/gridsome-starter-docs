@@ -1,21 +1,15 @@
 <template>
   <Section class="home-intro">
-    <div class="home-cols grid-cols grid-cols--2 grid-cols--gap-small">
-      <div class="home-cols__left">
-        <h1 class="home-title">
-          Gridsome starter
-          <br>for building
-          <br>documentation sites
-        </h1>
-
-        <p class="home-links">
-          <g-link to="/docs/quickstart" class="button primary button--large">Quickstart</g-link>
-          <g-link to="/docs" class="button">Documentation</g-link>
-        </p>
-      </div>
-      <div class="home-cols__right">
-        <g-image class="home-cols__image" alt="logo" src="~/assets/images/logo.png"/>
-      </div>
+    <div class="home-cols">
+      <g-image class="home-cols__image" alt="logo" src="~/assets/images/logo.png"/>
+      <h1 class="home-title">
+        Gridsome starter documentation
+      </h1>
+      <p class="home-subtitle">A quick and easy way to setup a customizable documentation site powered by Gridsome.</p>
+      <p class="home-links">
+        <g-link to="/docs/quickstart" class="button primary button--large">Quickstart</g-link>
+        <g-link to="/docs" class="button">Documentation</g-link>
+      </p>
     </div>
   </Section>
 </template>
@@ -27,14 +21,13 @@
 }
 
 .home-cols {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  &__left {
-    padding: 100px 5%;
-  }
-  &__right {
-    display: flex;
-    justify-content: center;
-  }
+  justify-content: center;
+  text-align: center;
+  margin-top: 5vh;
+
   &__image {
     width: 250px;
     height: 250px;
@@ -42,6 +35,10 @@
 }
 .home-links {
   margin-top: 2.5rem;
+
+  a {
+    margin-top: 10px;
+  }
 }
 
 .home-lead {
@@ -56,5 +53,12 @@
     padding-top: 2rem;
     font-size: 1.8rem;
   }
+}
+
+.home-subtitle {
+  max-width: 550px;
+  font-size: 1.3rem;
+  font-weight: 300;
+  opacity: 0.8;
 }
 </style>
