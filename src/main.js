@@ -6,6 +6,7 @@ import '~/assets/style/index.scss'
 import Layout from '~/layouts/Default.vue'
 import Docs from '~/layouts/Docs.vue'
 import Section from '~/components/Section.vue'
+import Card from '~/components/Card.vue'
 
 import VueScrollTo from 'vue-scrollto'
 
@@ -26,6 +27,7 @@ export default function (Vue, {
   Vue.component('Layout', Layout)
   Vue.component('DocsLayout', Docs)
   Vue.component('Section', Section)
+  Vue.component('Card', Card)
 
   Vue.use(VueScrollTo)
 
