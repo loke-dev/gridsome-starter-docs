@@ -8,19 +8,10 @@
 
 <script>
 export default {
-  props: ["dark", "container", "framed", "primary", "sway"],
+  props: ["container"],
   computed: {
-    sectionClass() {
-      let classes = [];
-      if (this.primary) classes.push("section--primary");
-      if (this.dark) classes.push("section--dark");
-      return classes;
-    },
     sectionClassInner() {
       let classes = [];
-      if (this.framed) {
-        classes.push("container--framed");
-      }
       if (this.container) {
         classes.push("container-" + this.container);
       }

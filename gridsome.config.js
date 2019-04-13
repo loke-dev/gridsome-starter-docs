@@ -21,9 +21,6 @@ module.exports = {
         whitelist: [
           /\.css$/,
           /\?vue&type=style/,
-          /vue-instantsearch/,
-          /instantsearch.js/,
-          /typeface-league-spartan/
          ]
       }))
     }
@@ -57,37 +54,6 @@ module.exports = {
               value: '#'
             }
           },
-          plugins: [
-            '@gridsome/remark-prismjs'
-          ]
-        }
-      }
-    },
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        index: ['README'],
-        path: 'learn/**/*.md',
-        typeName: 'LearnPage',
-        remark: {
-          autolinkHeadings: {
-            content: {
-              type: 'text',
-              value: '#'
-            }
-          },
-          plugins: [
-            '@gridsome/remark-prismjs'
-          ]
-        }
-      }
-    },
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        path: 'examples/*.md',
-        typeName: 'Example',
-        remark: {
           plugins: [
             '@gridsome/remark-prismjs'
           ]
