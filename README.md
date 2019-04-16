@@ -11,9 +11,9 @@
 - 100, 100, 100, 100 score on Google Lighthouse.
 - Uses same front-matter fields as Dev.to.
 
-## Demo URL
+## Demo
 
-https://casinobeginner.guide
+https://gridsome-starter-docs.loke.dev
 
 ## Install
 
@@ -23,7 +23,7 @@ https://casinobeginner.guide
 
 ### 2. Install this starter
 
-1. `gridsome create my-gridsome-site https://github.com/gridsome/gridsome-starter-blog.git`
+1. `gridsome create my-gridsome-site https://github.com/LokeCarlsson/gridsome-starter-docs.git`
 2. `cd my-gridsome-site` to open folder
-3. `gridsome develop` to start local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+3. `yarn dev` to start local dev server at `http://localhost:8080`
+4. Happy hacking 🎉🙌

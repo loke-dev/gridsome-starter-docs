@@ -5,12 +5,6 @@
         <h1>Gridsome blog</h1>
       </div>
       <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
-
-      <p class="text-center">
-        Want to contribute to Gridsome blog?
-        <g-link to="/docs/how-to-contribute#contributing-to-the-blog"> Learn more here</g-link>
-      </p>
-
     </Section>
   </Layout>
 </template> 

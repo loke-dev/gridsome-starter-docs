@@ -6,8 +6,6 @@
       <Nav class="flex-fit"/>
 
       <nav class="header-actions flex">
-        <SearchForm class="hide-for-small"/>
-
         <a
           aria-label="Twitter"
           href="//twitter.com/gridsome"
@@ -39,28 +37,15 @@
             height="20px"
             width="20px"
           />
-          <span
-            class="hide-for-small"
-            style="margin-left:5px;"
-          >v{{ $static.metaData.gridsomeVersion }}</span>
         </a>
       </nav>
     </div>
   </header>
 </template>
 
-<static-query>
-query Header {
-  metaData {
-    gridsomeVersion
-  }
-}
-</static-query>
-
 <script>
 import Logo from './Logo'
 import Nav from './Nav'
-import SearchForm from '~/components/SearchForm.vue'
 import GithubLogo from '@/assets/images/github-logo.svg'
 import TwitterLogo from '@/assets/images/twitter-logo.svg'
 import DiscordLogo from '@/assets/images/discord-logo.svg'
@@ -71,7 +56,6 @@ export default {
     GithubLogo,
     TwitterLogo,
     DiscordLogo,
-    SearchForm,
     Nav
   }
 }

@@ -3,34 +3,26 @@
     <div class="home-cols grid-cols grid-cols--2 grid-cols--gap-small">
       <div class="home-cols__left">    
         <h1 class="home-title"> 
-            Build <br class="show-for-small" />
-            <VueTyper :text="words" :type-delay="30" initial-action="erasing" caret-animation="smooth" />
-            <br /> websites & apps
-            <br /> with Vue.js
+          Gridsome starter
+          <br>
+          for building
+          <br>
+          documentation sites
         </h1>
 
         <p class="home-links">
-          <g-link  to="/docs" class="button primary button--large">
-            Get started
+          <g-link  to="/docs/quickstart" class="button primary button--large">
+            Quickstart
           </g-link>
-          <!-- <g-link  to="/learn" class="button">
-            Tutorial
-          </g-link> -->
+          <g-link  to="/docs" class="button">
+            Documentation
+          </g-link>
         </p>
 
-        <p class="home-info">
-          <span>Open-source MIT Licensed. </span>
-          <a href="//github.com/gridsome/gridsome" target="_blank">
-            <span>GitHub (v{{ $static.metaData.gridsomeVersion }})</span>
-          </a>
-        </p>
-        
       </div>
       <div class="home-cols__right">
         <div class="home-anim">
           <div class="home-anim__source-logos"><g-image alt="Logos" blur="1" src="~/assets/images/cms-logos.png" /></div>
-          <div class="home-anim__lines-in"> <lines-in /> </div>
-          <div class="home-anim__lines-out"> <lines-out  /> </div>
           <div class="home-anim__logo"> <Logo /> </div>
         </div>
       </div>

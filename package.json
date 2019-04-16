@@ -1,9 +1,9 @@
 {
   "private": true,
   "version": "1.0.0",
-  "name": "gridsome.org",
+  "name": "gridsome-starter-docs",
   "scripts": {
-    "develop": "gridsome develop",
+    "dev": "gridsome develop",
     "explore": "gridsome explore",
     "build": "gridsome build"
   },
