@@ -1,5 +1,4 @@
 {
-  "private": true,
   "version": "1.0.0",
   "name": "gridsome-starter-docs",
   "scripts": {
@@ -9,9 +8,7 @@
   },
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.0",
-    "algoliasearch": "^3.32.0",
     "babel-runtime": "^6.26.0",
-    "docsearch.js": "^2.6.2",
     "gridsome": "0.5.2",
     "typeface-league-spartan": "0.0.44",
     "typeface-nunito": "0.0.54",
@@ -19,9 +16,6 @@
     "vue-instantsearch": "^2.0.0",
     "vue-markdown": "^2.2.4",
     "vue-scrollto": "^2.13.0",
-    "vue-typer": "^1.2.0"
-  },
-  "devDependencies": {
     "@gridsome/plugin-critical": "^0.1.1",
     "@gridsome/remark-prismjs": "^0.0.4",
     "@gridsome/source-filesystem": "^0.3.0",

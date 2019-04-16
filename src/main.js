@@ -22,10 +22,14 @@ const typography = new Typography({
   bodyColor: 'hsla(0,0%,0%,0.7)',
   headerColor: 'hsla(0,0%,0%,0.9)',
   headerFontFamily: ['League Spartan', 'sans-serif'],
-  bodyFontFamily: ['Jost', 'Helvetica','Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
+  bodyFontFamily: ['Helvetica', 'Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
 })
 
-export default function (Vue, { head, router, isServer }) {
+export default function (Vue, {
+  head,
+  router,
+  isServer
+}) {
   Vue.component('Layout', Layout)
   Vue.component('DocsLayout', Docs)
   Vue.component('Section', Section)
