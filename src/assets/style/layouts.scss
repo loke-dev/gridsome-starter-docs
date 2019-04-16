@@ -1,0 +1,45 @@
+.container {
+  max-width: 1280px;
+  width: 100%;
+
+  &,
+  &-md,
+  &-full,
+  &-sm,
+  &-mini {
+    padding: 0 var(--space);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  &-md { max-width: 720px }
+  &-sm { max-width: 630px }
+  &-mini { max-width: 460px }
+
+  &--push {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  &--framed {
+    box-shadow: 1px 1px 15px rgba(0,0,0,.1);
+    padding: var(--space-x2);
+    background-color: #FFF;
+  }
+
+  // nested
+  .container {
+    padding-left:0;
+    padding-right:0;
+  }
+}
+
+.container-main {
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  @media screen and (min-width: 750px) {
+    flex-direction: row;
+  }
+}
