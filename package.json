@@ -1,41 +1,38 @@
 {
-  "name": "gridsome",
   "private": true,
-  "description": "A blog starter for Gridsome.",
-  "keywords": [
-    "blog",
-    "gridsome",
-    "gridsome-starter",
-    "jamstack",
-    "markdown",
-    "ssg",
-    "static-site",
-    "tailwindcss",
-    "vue"
-  ],
-  "license": "MIT",
+  "version": "1.0.0",
+  "name": "gridsome-starter-docs",
   "scripts": {
-    "build": "gridsome build",
-    "develop": "gridsome develop",
+    "dev": "gridsome develop",
     "explore": "gridsome explore",
-    "newdoc": "node scripts/newDocPage.js"
+    "build": "gridsome build"
   },
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "^1.1.0",
     "@gridsome/plugin-google-analytics": "^0.1.0",
-    "@gridsome/plugin-sitemap": "^0.1.1",
+    "algoliasearch": "^3.32.0",
+    "babel-runtime": "^6.26.0",
+    "docsearch.js": "^2.6.2",
+    "gridsome": "0.5.2",
+    "typeface-league-spartan": "0.0.44",
+    "typeface-nunito": "0.0.54",
+    "typography": "^0.16.18",
+    "vue-instantsearch": "^2.0.0",
+    "vue-markdown": "^2.2.4",
+    "vue-scrollto": "^2.13.0",
+    "vue-typer": "^1.2.0"
+  },
+  "devDependencies": {
+    "@gridsome/plugin-critical": "^0.1.1",
+    "@gridsome/remark-prismjs": "^0.0.4",
     "@gridsome/source-filesystem": "^0.3.0",
     "@gridsome/transformer-remark": "^0.2.1",
-    "@gridsome/transformer-yaml": "^0.1.0",
-    "docsearch.js": "^2.6.2",
-    "gridsome": "^0.5.5",
-    "gridsome-plugin-remark-shiki": "^0.2.0",
-    "postcss-import": "^12.0.1",
-    "postcss-nested": "^4.1.2",
-    "scroll-to-element": "^2.0.3",
-    "tailwindcss": "^1.0.0-beta.3",
-    "tailwindcss-border-gradients": "^1.0.1",
-    "tailwindcss-gradients": "^1.1.0",
-    "tailwindcss-transitions": "^1.0.4"
+    "execa": "^1.0.0",
+    "fs-extra": "^7.0.1",
+    "js-yaml": "^3.12.1",
+    "node-sass": "^4.9.3",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^7.1.0",
+    "svg-to-vue-component": "^0.2.2",
+    "webpack-node-externals": "^1.7.2"
   }
 }

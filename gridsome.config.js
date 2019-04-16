@@ -1,90 +1,114 @@
-class TailwindExtractor {
-  static extract(content) {
-    return content.match(/[A-Za-z0-9-_:\/]+/g) || [];
-  }
-}
+const nodeExternals = require('webpack-node-externals')
 
 module.exports = {
-  siteName: 'Maizzle - Framework for Rapid Email Prototyping',
-  siteDescription: "Maizzle is an email framework that helps you quickly build emails with utility-first CSS and advanced, email-specific post-processing.",
-  siteUrl: 'https://maizzle.com',
-  titleTemplate: `%s | Maizzle - Framework for Rapid Email Prototyping`,
-  icon: 'src/favicon.png',
+  siteName: 'gridsome-starter-docs',
+  siteUrl: `https://www.gridsome-starter-docs.loke.dev`,
+  titleTemplate: '%s - gridsome-starter-docs',
+  siteDescription: 'Starter project to quickly set up an documentation site with Gridsome.',
+  
+  chainWebpack(config, { isServer }) {
+    config.module.rules.delete('svg')
+    config.module.rule('svg')
+      .test(/\.svg$/)
+      .use('vue')
+      .loader('vue-loader')
+        .end()
+      .use('svg-to-vue-component')
+      .loader('svg-to-vue-component/loader')
 
-  transformers: {
-    remark: {
-      autolinkClassName: 'anchor-icon',
-      externalLinksTarget: '_blank',
-      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-      plugins: [
-        ['gridsome-plugin-remark-shiki', {
-          theme: 'quietlight'
-        }]
-      ]
+    if (isServer) {
+      config.externals(nodeExternals({
+        whitelist: [
+          /\.css$/,
+          /\?vue&type=style/,
+          /vue-instantsearch/,
+          /instantsearch.js/,
+          /typeface-league-spartan/
+         ]
+      }))
     }
   },
 
   plugins: [
     {
-      use: '@gridsome/source-filesystem',
-      options: {
-        path: 'content/docs/**/*.md',
-        typeName: 'Doc',
-        route: '/docs/:slug',
-      }
-    },
-    {
       use: '@gridsome/plugin-google-analytics',
       options: {
-        id: 'UA-123145832-1'
+        id: 'UA-127625720-1'
       }
     },
     {
-      use: '@gridsome/plugin-sitemap',
+      use: '@gridsome/plugin-critical',
       options: {
-        cacheTime: 600000, // default
+        paths: ['/'],
+        width: 1300,
+        height: 900
       }
     },
-  ],
-
-  chainWebpack: config => {
-    config.module
-      .rule('css')
-      .oneOf('normal')
-      .use('postcss-loader')
-      .tap(options => {
-        options.plugins.unshift(...[
-          require('postcss-import'),
-          require('postcss-nested'),
-          require('tailwindcss'),
-        ])
-
-        if (process.env.NODE_ENV === 'production') {
-          options.plugins.push(...[
-            require('@fullhuman/postcss-purgecss')({
-              content: [
-                'src/assets/**/*.css',
-                'content/**/*.md',
-                'src/**/*.vue',
-                'src/**/*.js'
-              ],
-              extractors: [
-                {
-                  extractor: TailwindExtractor,
-                  extensions: ['css', 'vue', 'js', 'md']
-                }
-              ],
-              whitelistPatterns: [/shiki/, /a(lgoli)?a/]
-            }),
-          ])
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        index: ['README'],
+        path: 'docs/**/*.md',
+        typeName: 'DocPage',
+        remark: {
+          autolinkHeadings: {
+            content: {
+              type: 'text',
+              value: '#'
+            }
+          },
+          plugins: [
+            '@gridsome/remark-prismjs'
+          ]
         }
-
-        return options
-      })
-  },
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        index: ['README'],
+        path: 'learn/**/*.md',
+        typeName: 'LearnPage',
+        remark: {
+          autolinkHeadings: {
+            content: {
+              type: 'text',
+              value: '#'
+            }
+          },
+          plugins: [
+            '@gridsome/remark-prismjs'
+          ]
+        }
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'examples/*.md',
+        typeName: 'Example',
+        remark: {
+          plugins: [
+            '@gridsome/remark-prismjs'
+          ]
+        }
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'BlogPost',
+        path: './blog/*/index.md',
+        route: '/blog/:year/:month/:day/:slug',
+        refs: {
+          author: 'Author'
+        },
+        remark: {
+          plugins: [
+            '@gridsome/remark-prismjs'
+          ]
+        }
+      }
+    }
+  ]
 }
-
-
-
-
-
