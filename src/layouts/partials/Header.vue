@@ -7,36 +7,13 @@
 
       <nav class="header-actions flex">
         <a
-          aria-label="Twitter"
-          href="//twitter.com/gridsome"
-          rel="noopener noreferrer"
-          target="_blank"
-          title="Follow us on Twitter"
-        >
-          <twitter-logo/>
-        </a>
-        
-        <a
-          aria-label="Discord"
-          href="//discord.gg/daeay6n"
-          rel="noopener noreferrer"
-          target="_blank"
-          title="Join our discord"
-        >
-          <discord-logo/>
-        </a>
-        
-        <a
           aria-label="github"
-          href="//github.com/gridsome/gridsome"
+          href="//github.com/LokeCarlsson/gridsome-starter-docs"
           rel="noopener noreferrer"
           target="_blank"
-          title="Gridsome @ GitHub"
+          title="gridsome-starter-docs"
         >
-          <github-logo
-            height="20px"
-            width="20px"
-          />
+          <github-logo height="20px" width="20px"/>
         </a>
       </nav>
     </div>
@@ -44,21 +21,17 @@
 </template>
 
 <script>
-import Logo from './Logo'
-import Nav from './Nav'
-import GithubLogo from '@/assets/images/github-logo.svg'
-import TwitterLogo from '@/assets/images/twitter-logo.svg'
-import DiscordLogo from '@/assets/images/discord-logo.svg'
+import Logo from "./Logo";
+import Nav from "./Nav";
+import GithubLogo from "@/assets/images/github-logo.svg";
 
 export default {
   components: {
     Logo,
     GithubLogo,
-    TwitterLogo,
-    DiscordLogo,
     Nav
   }
-}
+};
 </script>
 
 <style lang="scss">

@@ -1,27 +1,19 @@
 <template>
   <footer class="text-center">
-    Made in ⛄️ Norway by
-    <a
-      class="plain"
-      href="//twitter.com/hjvedvik"
-      rel="noopener noreferrer"
-      target="_blank"
-    >@hjvedvik</a> &
-    <a
-      class="plain"
-      href="//twitter.com/tommyvedvik"
-      rel="noopener noreferrer"
-      target="_blank"
-    >@tommyvedvik</a> and
-    <a
-      class="plain"
-      href="//github.com/gridsome/gridsome/graphs/contributors"
-      rel="noopener noreferrer"
-      target="_blank"
-    >Contributors 🌟</a>
-    <g-link to="/logo">Logo & assets</g-link>
+    <a class="plain" href="//gridsome.org" rel="noopener noreferrer" target="_blank">
+      <logo class="gridsome-logo"/>
+    </a>
   </footer>
 </template>
+
+<script>
+import Logo from "@/../static/logos/logo-normal.svg";
+export default {
+  components: {
+    Logo
+  }
+};
+</script>
 
 <style lang="scss">
 footer {
@@ -32,5 +24,10 @@ footer {
   @media screen and (max-width: 750px) {
     padding-bottom: 90px;
   }
+}
+
+.gridsome-logo {
+  width: 120px;
+  height: 30px;
 }
 </style>

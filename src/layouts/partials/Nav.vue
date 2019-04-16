@@ -1,31 +1,27 @@
 <template>
   <nav class="main-nav flex gap-15">
     <g-link to="/docs">
-      <icon-docs />
+      <icon-docs/>
       <span class="main-nav__label">Docs</span>
     </g-link>
 
     <g-link to="/blog">
-      <icon-blog />
+      <icon-blog/>
       <span class="main-nav__label">Blog</span>
     </g-link>
   </nav>
 </template>
 
 <script>
-import IconPlugins from '@/assets/images/icon-plugins.svg'
-import IconBlog from '@/assets/images/icon-blog.svg'
-import IconDocs from '@/assets/images/icon-docs.svg'
-import IconLearn from '@/assets/images/icon-learn.svg'
+import IconBlog from "@/assets/images/icon-blog.svg";
+import IconDocs from "@/assets/images/icon-docs.svg";
 
 export default {
   components: {
-    IconPlugins,
-    IconLearn,
     IconDocs,
     IconBlog
   }
-}
+};
 </script>
 
 <style lang="scss">

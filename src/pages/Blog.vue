@@ -1,8 +1,8 @@
 <template>
   <Layout>
-     <Section container="md" class="blog-posts" dots="top">
+    <Section container="md" class="blog-posts" dots="top">
       <div class="mb container-sm text-center">
-        <h1>Gridsome blog</h1>
+        <h1>Blog</h1>
       </div>
       <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
     </Section>
@@ -33,14 +33,14 @@ query BlogPosts {
 </page-query>
 
 <script>
-import PostCard from '@/components/PostCard.vue'
+import PostCard from "@/components/PostCard.vue";
 
 export default {
   components: {
     PostCard
   },
   metaInfo: {
-    title: 'Blog'
+    title: "Blog"
   }
-}
+};
 </script>
