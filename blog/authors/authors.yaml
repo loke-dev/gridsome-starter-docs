@@ -1,6 +1,5 @@
 - id: doge
   name: Doge
   bio: Bork.
-  avatar: ./doge.jpg
+  avatar: ./doge.png
   twitter: "@dogethedog"
-  
