@@ -1,13 +1,12 @@
 <template>
   <Layout>
-    <Section class="post" container="md" dots="true" >
-
+    <Section class="post" container="md">
       <div class="post-header container-sm text-center mb">
         <h1 v-html="$page.post.title"/>
         <PostMeta :post="$page.post"/>
       </div>
 
-      <g-image v-if="$page.post.poster" quality="1" width="600" :src="$page.post.poster" />
+      <g-image v-if="$page.post.poster" quality="1" width="600" :src="$page.post.poster"/>
 
       <p class="lead" v-html="$page.post.excerpt"/>
 
@@ -35,24 +34,24 @@ query BlogPost ($path: String!) {
 </page-query>
 
 <script>
-import PostMeta from '@/components/PostMeta.vue'
+import PostMeta from "@/components/PostMeta.vue";
 
 export default {
   components: {
-    PostMeta,
+    PostMeta
   },
-  metaInfo () {
+  metaInfo() {
     return {
       title: this.$page.post.title,
       meta: [
         {
-          name: 'description',
+          name: "description",
           content: this.$page.post.excerpt
         }
       ]
-    }
+    };
   }
-}
+};
 </script>
 
 <style lang="scss">

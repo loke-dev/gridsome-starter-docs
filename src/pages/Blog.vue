@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <Section container="md" class="blog-posts" dots="top">
+    <Section container="md" class="blog-posts">
       <div class="mb container-sm text-center">
         <h1>Blog</h1>
       </div>
