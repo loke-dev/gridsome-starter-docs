@@ -13,6 +13,9 @@
           <g-link to="/docs" class="button">Documentation</g-link>
         </p>
       </div>
+      <div class="home-cols__right">
+        <g-image class="home-cols__image" alt="logo" src="~/assets/images/logo.png"/>
+      </div>
     </div>
   </Section>
 </template>
@@ -29,6 +32,12 @@
     padding: 100px 5%;
   }
   &__right {
+    display: flex;
+    justify-content: center;
+  }
+  &__image {
+    width: 250px;
+    height: 250px;
   }
 }
 .home-links {
