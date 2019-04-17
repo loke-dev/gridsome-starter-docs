@@ -1,29 +1,24 @@
 <template>
   <div class="logo">
     <g-link class="logo__link" to="/" title="Back to home">
-      <Logo class="logo__svg" alt="logo"/>
+      <p>gridsome-starter-docs</p>
     </g-link>
   </div>
 </template>
 
 <script>
-import Logo from "~/assets/images/gridsome-logo.svg";
 export default {
-  components: {
-    Logo
-  }
+  components: {}
 };
 </script>
 
 <style lang="scss">
 .logo {
-  svg {
-    max-width: 140px;
-    height: auto;
-    margin-top: -3px;
-  }
-  &:hover {
-    opacity: 0.8;
+  p {
+    color: var(--primary-color);
+    &:hover {
+      color: var(--primary-link-color);
+    }
   }
 }
 </style>
