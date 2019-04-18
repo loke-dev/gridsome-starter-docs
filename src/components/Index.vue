@@ -2,10 +2,10 @@
   <Section class="home-intro">
     <div class="home-cols">
       <g-image class="home-cols__image" alt="logo" src="~/assets/images/logo.png"/>
-      <h1 class="home-title">
-        Gridsome starter documentation
-      </h1>
-      <p class="home-subtitle">A quick and easy way to setup a customizable documentation site powered by Gridsome.</p>
+      <h1 class="home-title">Gridsome starter documentation</h1>
+      <p
+        class="home-subtitle"
+      >A quick and easy way to setup a customizable documentation site powered by Gridsome.</p>
       <p class="home-links">
         <g-link to="/docs/quickstart" class="button primary button--large">Quickstart</g-link>
         <g-link to="/docs" class="button">Documentation</g-link>
@@ -77,21 +77,21 @@
 }
 
 .features {
-  border-top: 1px solid #57cea04b;
-  padding: 1.2rem 0;
-  margin-top: 2.5rem;
+  border-top: 1px solid #57cea0d0;
+  padding: 1.5rem 0;
+  margin: 2.5rem 0 2.5rem;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   align-content: stretch;
   justify-content: space-between;
   width: 75%;
-  max-width: 650px;
+  max-width: 1200px;
 
   .feature {
     flex-grow: 1;
-    flex-basis: 30%;
-    max-width: 30%;
+    flex-basis: 25%;
+    max-width: 25%;
 
     h2 {
       font-size: 1.5rem;
