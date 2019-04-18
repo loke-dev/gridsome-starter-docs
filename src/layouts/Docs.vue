@@ -65,7 +65,7 @@ export default {
     },
     editLink () {
       let path = this.currentPath
-      if((path.match(new RegExp("/", "g")) || []).length == 1) path = path + '/README'
+      if ((path.match(new RegExp("/", "g")) || []).length == 1) path = path + '/README'
       return `https://github.com/LokeCarlsson/gridsome-starter-docs/blob/master${path}.md`
     },
     items () {
