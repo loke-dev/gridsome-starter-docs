@@ -11,3 +11,8 @@
       link: /docs/sub1
     - title: Sub section 2
       link: /docs/sub2
+
+- title: Other
+  items: 
+    - title: Author
+      link: /docs/author
