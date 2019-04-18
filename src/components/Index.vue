@@ -6,10 +6,10 @@
       <p
         class="home-subtitle"
       >A quick and easy way to setup a customizable documentation site powered by Gridsome.</p>
-      <p class="home-links">
+      <div class="home-links">
         <g-link to="/docs/quickstart" class="button primary button--large">Quickstart</g-link>
         <g-link to="/docs" class="button">Documentation</g-link>
-      </p>
+      </div>
       <div class="features">
         <div class="feature">
           <h2>Quick setup</h2>

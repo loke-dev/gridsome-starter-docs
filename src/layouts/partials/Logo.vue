@@ -1,7 +1,8 @@
 <template>
   <div class="logo">
     <g-link class="logo__link" to="/" title="Back to home">
-      <p>gridsome-starter-docs</p>
+      <g-image class="logo__image" alt="logo" src="~/assets/images/logo-circle-light.svg"/>
+      <p>Gridsome starter docs</p>
     </g-link>
   </div>
 </template>
@@ -19,6 +20,15 @@ export default {
     &:hover {
       color: var(--primary-link-color);
     }
+  }
+  .logo__link {
+    display: flex;
+    align-items: center;
+  }
+  .logo__image {
+    height: 20px;
+    width: auto;
+    margin: 0 10px 0 0;
   }
 }
 </style>
