@@ -1,8 +1,10 @@
+<p align="center"><a href="https://gridsome-starter-docs.loke.dev"><img alt="logo" width="250" src="https://gridsome-starter-docs.loke.dev/assets/static/logo.9aea1e3.74835a9.png" /></a></p>
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a4bebd5e-af19-4af3-990f-f5eee569e050/deploy-status)](https://app.netlify.com/sites/gridsome-starter-docs/deploys)
+
 # gridsome-starter-docs
 
 > A starter project, perfect for your documentation site.
-
-<p align="center"><a href="https://gridsome-starter-docs.loke.dev"><img alt="logo" width="250" src="https://gridsome-starter-docs.loke.dev/assets/static/logo.9aea1e3.74835a9.png" /></a></p>
 
 ## Features
 - Beautiful and simple design.
@@ -15,6 +17,10 @@ https://gridsome-starter-docs.loke.dev
 
 ## Install
 
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/LokeCarlsson/gridsome-starter-docs)
+
+**or manually follow the guide below**
+
 ### 1. Install Gridsome CLI tool if you don't have
 
 `npm install --global @gridsome/cli`
@@ -25,7 +31,3 @@ https://gridsome-starter-docs.loke.dev
 2. `cd my-gridsome-site` to open folder
 3. `yarn dev` to start local dev server at `http://localhost:8080`
 4. Happy hacking 🎉🙌
-
-**or simply click the button below**
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/LokeCarlsson/gridsome-starter-docs)
