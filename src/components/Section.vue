@@ -1,5 +1,5 @@
 <template>
-  <section class="section" :class="sectionClass">
+  <section class="section">
     <div class="section--inner container" :class="sectionClassInner">
       <slot/>
     </div>
