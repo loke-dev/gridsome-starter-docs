@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a4bebd5e-af19-4af3-990f-f5eee569e050/deploy-status)](https://app.netlify.com/sites/gridsome-starter-docs/deploys)
+
 # gridsome-starter-docs
 
 > A starter project, perfect for your documentation site.
