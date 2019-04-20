@@ -88,10 +88,20 @@
   width: 75%;
   max-width: 1200px;
 
+  @media (max-width: 400px) {
+    width: 100%;
+  }
+
   .feature {
     flex-grow: 1;
     flex-basis: 25%;
     max-width: 25%;
+
+    @media (max-width: 400px) {
+      flex-basis: 100%;
+      max-width: 100%;
+      padding-bottom: 50px;
+    }
 
     h2 {
       font-size: 1.5rem;
