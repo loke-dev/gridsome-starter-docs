@@ -19,3 +19,6 @@ or with npm
 3. `yarn dev` to start local dev server at `http://localhost:8080`
 4. Happy hacking 🎉🙌
 
+**or simply click the button below**
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/LokeCarlsson/gridsome-starter-docs)
