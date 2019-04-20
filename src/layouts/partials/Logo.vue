@@ -1,15 +1,16 @@
 <template>
   <div class="logo">
     <g-link class="logo__link" to="/" title="Back to home">
-      <g-image class="logo__image" alt="logo" src="~/assets/images/logo-circle-light.svg"/>
+      <Logo class="logo__image" alt="logo"/>
       <p>Gridsome starter docs</p>
     </g-link>
   </div>
 </template>
 
 <script>
+import Logo from '~/assets/images/logo-circle-light.svg'
 export default {
-  components: {}
+  components: {Logo}
 };
 </script>
 
