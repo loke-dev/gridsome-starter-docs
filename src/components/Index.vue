@@ -50,8 +50,19 @@
 .home-links {
   margin-top: 2.5rem;
 
+  @media (max-width: 400px) {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
   a {
-    margin-top: 10px;
+    margin-left: var(--space);
+
+    @media (max-width: 400px) {
+      margin: auto;
+      margin-top: 20px;
+    }
   }
 }
 
