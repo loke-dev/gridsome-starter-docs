@@ -2,6 +2,8 @@
 
 > A starter project, perfect for your documentation site.
 
+<p align="center"><a href="https://gridsome-starter-docs.loke.dev"><img alt="logo" width="250" src="https://gridsome-starter-docs.loke.dev/assets/static/logo.9aea1e3.74835a9.png" /></a></p>
+
 ## Features
 - Beautiful and simple design.
 - Markdown for documentation.
