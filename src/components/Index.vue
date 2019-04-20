@@ -44,7 +44,6 @@
 
   &__image {
     width: 250px;
-    height: 250px;
   }
 }
 .home-links {
