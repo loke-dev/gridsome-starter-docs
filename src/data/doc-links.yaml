@@ -7,10 +7,10 @@
 
 - title : Section
   items:
-    - title: Sub section 1
-      link: /docs/sub1
-    - title: Sub section 2
-      link: /docs/sub2
+    - title: Test post 1
+      link: /docs/test-post-1
+    - title: Test post 2
+      link: /docs/test-post-2
 
 - title: Other
   items: 
