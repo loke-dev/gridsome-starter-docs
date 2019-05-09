@@ -1,4 +1,4 @@
-<p align="center"><a href="https://gridsome-starter-docs.loke.dev"><img alt="logo" width="250" src="https://gridsome-starter-docs.loke.dev/assets/static/logo.9aea1e3.74835a9.png" /></a></p>
+<p align="center"><a href="https://gridsome-starter-docs.loke.dev"><img alt="logo" width="250" src="./static/logos/logo.png" /></a></p>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a4bebd5e-af19-4af3-990f-f5eee569e050/deploy-status)](https://app.netlify.com/sites/gridsome-starter-docs/deploys)
 
