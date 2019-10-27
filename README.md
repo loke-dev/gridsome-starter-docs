@@ -17,7 +17,7 @@ https://gridsome-starter-docs.loke.dev
 
 ## Install
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/LokeCarlsson/gridsome-starter-docs)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/LokeCarlsson/gridsome-starter-docs) [![Greenkeeper badge](https://badges.greenkeeper.io/LokeCarlsson/gridsome-starter-docs.svg)](https://greenkeeper.io/)
 
 **or manually follow the guide below**
 
