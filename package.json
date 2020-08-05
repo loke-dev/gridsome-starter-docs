@@ -11,7 +11,7 @@
     "@gridsome/plugin-google-analytics": "^0.1.0",
     "@gridsome/remark-prismjs": "^0.0.4",
     "@gridsome/source-filesystem": "^0.3.0",
-    "@gridsome/transformer-remark": "^0.2.1",
+    "@gridsome/transformer-remark": "^0.6.1",
     "babel-runtime": "^6.26.0",
     "execa": "^1.0.0",
     "fs-extra": "^7.0.1",
