@@ -23,7 +23,7 @@
     "svg-to-vue-component": "^0.2.2",
     "typography": "^0.16.18",
     "vue-markdown": "^2.2.4",
-    "vue-scrollto": "^2.13.0",
+    "vue-scrollto": "^2.18.1",
     "webpack-node-externals": "^1.7.2"
   }
 }
