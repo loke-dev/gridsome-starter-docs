@@ -9,7 +9,7 @@
   "dependencies": {
     "@gridsome/plugin-critical": "^0.1.1",
     "@gridsome/plugin-google-analytics": "^0.1.0",
-    "@gridsome/remark-prismjs": "^0.0.4",
+    "@gridsome/remark-prismjs": "^0.3.0",
     "@gridsome/source-filesystem": "^0.3.0",
     "@gridsome/transformer-remark": "^0.2.1",
     "babel-runtime": "^6.26.0",
