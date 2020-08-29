@@ -7,7 +7,7 @@
     "build": "gridsome build"
   },
   "dependencies": {
-    "@gridsome/plugin-critical": "^0.1.1",
+    "@gridsome/plugin-critical": "^0.1.6",
     "@gridsome/plugin-google-analytics": "^0.1.0",
     "@gridsome/remark-prismjs": "^0.0.4",
     "@gridsome/source-filesystem": "^0.3.0",
