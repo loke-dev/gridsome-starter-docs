@@ -19,7 +19,7 @@
     "js-yaml": "^3.13.1",
     "node-sass": "^4.14.1",
     "raw-loader": "^0.5.1",
-    "sass-loader": "^7.1.0",
+    "sass-loader": "^7.3.1",
     "svg-to-vue-component": "^0.3.8",
     "typography": "^0.16.18",
     "vue-markdown": "^2.2.4",
