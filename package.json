@@ -21,7 +21,7 @@
     "raw-loader": "^0.5.1",
     "sass-loader": "^7.3.1",
     "svg-to-vue-component": "^0.3.8",
-    "typography": "^0.16.18",
+    "typography": "^0.16.19",
     "vue-markdown": "^2.2.4",
     "vue-scrollto": "^2.18.1",
     "webpack-node-externals": "^1.7.2"
