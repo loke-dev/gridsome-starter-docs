@@ -38,7 +38,7 @@ module.exports = function (api) {
       authors.addNode({
         id,
         title,
-        fields,
+        ...fields,
         internal: {
           origin: authorsPath
         }
